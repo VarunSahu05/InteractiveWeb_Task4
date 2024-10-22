@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles4/product.css">
+</head>
+<body>
+<header>
+        <div class="user-profile">
+            <img src="images/apex.png" alt="Profile Picture" id="profile-pic">
+            <h3 id="user-name">Welcome, User</h3>
+        </div>
+        <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Personal_Portfolio</a></li>
+            <li><a href="todo.html">Todo_List</a></li>
+            <li><a href="product.html">Product_Listing</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!-- Main Container -->
+    <div id="main-container" class="container">
+        <div class="header">
+            <h1 style="text-align: center; font-weight: Bold;">Product Listing</h1>
+        </div>
+        <div class="row">
+            <!-- Filter Section -->
+            <div class="col-md-4 filter-section">
+                <label for="category-filter">Category:</label>
+                <select id="category-filter">
+                    <option value="">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="home">Home Appliances</option>
+                    <option value="sports">Sports</option>
+                    <option value="toys">Toys</option>
+                </select>
+
+                <label for="price-filter">Price Range:</label>
+                <select id="price-filter">
+                    <option value="">All</option>
+                    <option value="low">Under $50</option>
+                    <option value="mid">$50 - $500</option>
+                    <option value="high">Above $500</option>
+                </select>
+
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="default">Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating-asc">Rating: Low to High</option>
+                    <option value="rating-desc">Rating: High to Low</option>
+                </select>
+
+                <!-- Cart Section -->
+                <div class="cart">
+                    <h2>Your Cart</h2>
+                    <div id="cart-items"></div><br>
+                    <div id="total-amount"><strong>Total Amount: $0.00</strong></div>
+                    <br>
+                    <button id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+
+            <!-- Product List Section -->
+            <div class="col-md-8">
+                <div class="product-list" id="product-list"></div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="scripts4/product.js"></script>
+</body>
+</html>

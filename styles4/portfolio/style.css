@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+header {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .user-profile {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  border-radius: 50%;
+  width: 70px;
+  margin-right: 20px;
+}
+
+.navbarr, .navbar {
+  padding: 1em;
+  width: 100%;
+}
+
+.navbarr {
+  background-color: #000;
+}
+
+.navbar {
+  background-color: #ecf1f3;
+  color: #0c0b0b;
+}
+
+.navbarr ul, .navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbarr li, .navbar li {
+  margin-left: 30px;
+}
+
+.navbarr a, .navbar a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+  margin: 0 10px;
+}
+
+.navbarr a {
+  color: #fff;
+}
+
+.navbar a {
+  color: #1d1c1c;
+}
+
+.navbarr a:hover {
+  background-color: #333;
+}
+
+.navbar a:hover {
+  background-color: #616161;
+}
+
+.cont {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Extra small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-profile img {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .navbarr ul, .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbarr li, .navbar li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbarr a, .navbar a {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+
+/* Small devices (portrait tablets, large phones, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-profile img {
+    width: 60px;
+    margin-right: 15px;
+  }
+
+  .navbarr ul, .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbarr li, .navbar li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbarr a, .navbar a {
+    font-size: 17px;
+    padding: 10px 18px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .user-profile img {
+    width: 65px;
+    margin-right: 20px;
+  }
+
+  .navbarr ul, .navbar ul {
+    flex-direction: row;
+  }
+
+  .navbarr li, .navbar li {
+    margin-left: 15px;
+  }
+
+  .navbarr a, .navbar a {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+/* Large devices (desktops, 1025px and above) */
+@media (min-width: 1025px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbarr ul, .navbar ul {
+    flex-direction: row;
+  }
+
+  .navbarr li, .navbar li {
+    margin-left: 30px;
+  }
+
+  .navbarr a, .navbar a {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
